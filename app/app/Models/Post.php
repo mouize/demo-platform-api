@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 #[ApiResource(
     middleware: ['auth:sanctum'],
-    paginationItemsPerPage: 10
 )]
 #[QueryParameter(key: 'title', filter: PartialSearchFilter::class)]
 #[QueryParameter(key: 'sort[:title]', filter: OrderFilter::class)]
